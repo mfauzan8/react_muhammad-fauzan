@@ -22,16 +22,21 @@ Link : **https://getbootstrap.com/**
 > Untuk merubah warna default dari bootstrap bisa menggunakan !important
 
 ### Grid
-Grid sistem membagi lebar halaman menjadi 12 bagian. 
+Grid sistem membagi lebar halaman menjadi 12 bagian.  
 Sehingga apabila menggunakan class col-8, maka lebarnya akan menjadi 8/12.
-contoh :
-<div class="container">
-  <div class="row">
-    <div class="col-8">
-      Column
-    </div>
-    <div class="col-4">
-      Column
-    </div>
-  </div>
-</div>
+- contoh :
+  div.container  
+  div.row  
+    div.col-8  
+    /div  
+    div.col-4  
+    /div  
+  /div  
+/div  
+
+### Form
+1. .form-group = untuk membungkus setiap elemen pada form 
+2. .form-control = untuk style pada setiap elemen input
+3. .form-inline = menempatkan form dalam satu baris
+4. .form-control-lg, .form-control-sm =  mengubah ketinggian input teks 
+5. .is-invalid dan .is-valid = untuk mengatur style validasi
