@@ -1,0 +1,31 @@
+span{
+    color: #8CCE7C;
+}
+.bg-light{
+    background-color: white !important;
+}
+#features{
+    text-align: center;
+    padding: 40px;
+}
+
+#features img{
+    height: 100px;
+}
+#screenshot{
+    padding: 40px;
+}
+#screenshot img{
+    height: 500px;
+}
+#footer{
+    background-color: #2A2C30 ;
+    color: white;
+}
+.col-3 p, .col-2 li{
+    font-size: 10px;
+}
+.pt-6{
+    padding-top: 100px;
+    text-align: justify;
+}
