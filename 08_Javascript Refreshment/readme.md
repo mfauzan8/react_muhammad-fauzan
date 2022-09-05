@@ -54,25 +54,19 @@ If .. Else, Switch, Block, Try .. Catch, Break, Continue, Throw
 ### Document Object Model (DOM)
 API untuk HTML yang merepresentasikan halaman web pada suatu dokumenn menjadi sebuah object.  
 1. Selection Method  
-  | Event | Kegunaan |
-  | ----------- | ----------- |
-  | getElementById | Mengambil element berdasarkan id |
-  | getElementByTagName() | HTMLCollection berdasarkan tag |
-  | getElementByClassName() | HTMLCollection berdasarkan class |
-  | querySelector() | Element |
-  | querySelectorAll() | nodelist |
+  - getElementById = Mengambil element berdasarkan id 
+  - getElementByTagName() = HTMLCollection berdasarkan tag 
+  - getElementByClassName() = HTMLCollection berdasarkan class 
+  - querySelector() = Element 
+  - querySelectorAll() = nodelist 
 
 2. Manipulation  
-  | Event | Kegunaan |
-  | ----------- | ----------- |
-  | element.innerHTML | Merubah isi dari tag yang sudah kita seleksi |
-  | element.style.| Merubah style dari tag yang di seleksi |
-  | element.setAttribute() | Mengelola/memanipulasi attribute yang diseleksi |
-  | element.classList.add() | Mengelola/memanipulasi class yang sudah di seleksi |
+  - element.innerHTML = Merubah isi dari tag yang sudah kita seleksi 
+  - element.style. = Merubah style dari tag yang di seleksi 
+  - element.setAttribute() = Mengelola/memanipulasi attribute yang diseleksi 
+  - element.classList.add() = Mengelola/memanipulasi class yang sudah di seleksi 
 3. Event  
-  | Event | Kegunaan |
-  | ----------- | ----------- |
-  | onclick | ketika pengguna mengklik mouse |
-  | onchhange | dalam kombinasi dengan validasi bidang input |
-  | onblur | ketika anda meninggalkan kolom input |
-  | oncopy | ketika pengguna mengcopy suatu object |
+  - onclick =ketika pengguna mengklik mouse 
+  - onchhange = dalam kombinasi dengan validasi bidang input 
+  - onblur = ketika anda meninggalkan kolom input
+  - oncopy = ketika pengguna mengcopy suatu object 
