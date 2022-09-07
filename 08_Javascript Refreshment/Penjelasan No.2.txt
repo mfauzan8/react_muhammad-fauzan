@@ -1,0 +1,8 @@
+a.  jelaskan kenapa baris 22,23,24 tidak dapat tampil?
+    jawab : karena kondisi didalam percabangan if tidak terpenuhi. variabel terdaftar di deklarasikan mempunyai nilai false, sedangkan kondisi yang di jalankan adalah jika terdaftar bernilai true.
+
+b.  jelaskan kenapa deklarasi pada baris 26 menyebabkan error?
+    karena untuk deklarasi dengan const tidak dapat diubah ubah
+
+c.  dengan melakukan komen pada baris ke-26, apakah baris 28 dapat dieksekusi?
+    tidak, karena pada baris 28 console.log ke variabel asal, sedangkan variabel asal dideklarasikan didalam fungsi/lokal.
