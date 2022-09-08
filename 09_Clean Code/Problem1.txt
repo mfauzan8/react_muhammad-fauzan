@@ -1,0 +1,10 @@
+- berapa banyak kekurangan dalam penulisan tersebut?
+- Bagian mana saja terjadi kekurangan tersebut?
+1. Bagian penulisan user dan users pada code js 
+2. Bagian nama alias userservice pada code golang
+3. pembuatan variabel t pada code golang
+
+- Tuliskan alasan dari setiap kekurangan tersebut
+1. pembuatan nama user dan users harus dibedakan sesuai dengan maksud dari penamaan variabel tersebut.
+2. nama lain untuk userservice sebaiknya jangan menggunakan u saja, karena akan menimbulkan dua presepsi antara untuk user atau userservice.
+3. variabel t code tersebut tidak mendeskrisikan apapun yang ada dalam code.
