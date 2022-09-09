@@ -10,10 +10,10 @@ Sekumpulan instruksi atau langkah-langkah yang dituliskan secara sistematis dan 
 1. Pseudocode = cara penulisan program yang mudah dibaca  
 contoh :  
 Menghitung Luas Segitiga
- 1. input alas dan tinggi
- 2. calculate luas = (alas x tinggi) / 2
- 3. print luas
+   1. input alas dan tinggi
+   2. calculate luas = (alas x tinggi) / 2
+   3. print luas
 
 2. Flowchart = menggambarkan alur dengan simbol tertentu.  
 contoh :   
-![contoh flowchart luas segitiga](https://badoystudio.com/contoh-algoritma-dan-flowchart/) 
+![contoh flowchart luas segitiga!](https://badoystudio.com/contoh-algoritma-dan-flowchart/ "flowchart luas segitiga") 
