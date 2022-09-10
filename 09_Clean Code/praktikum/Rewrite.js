@@ -15,9 +15,10 @@ class mobil extends kendaraan {
 
 void main(){
     mobilcepat = new mobil();
-    mobilcepat.bergerak();
-    mobilcepat.bergerak();
-    mobilcepat.bergerak();
+    while (ulang < 4) {
+        mobilcepat.bergerak();
+        ulang++;
+      }
 
     mobillamban = new mobil();
     mobillamban.bergerak();
