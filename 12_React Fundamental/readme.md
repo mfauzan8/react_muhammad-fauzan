@@ -61,13 +61,20 @@ Komponen React adalah bagian kode yang dapat digunakan kembali yang digunakan un
 ### Render Bersyarat
 
 1. Menggunakan if
+
    ![If](https://i.ibb.co/d7wMm68/if.png "if")
+
 2. Inline if dengan operator &&
+
    ![IF &&](https://i.ibb.co/55m0zBn/if.png "if&&")
+
 3. Inline if-else dengan ternary conditional operator.
+
    **condition ? true : false**
    ![ternary](https://i.ibb.co/5FmZ1Vx/ternary.png "ternary")
+
 4. Mencegah komponen untuk Rendering
+
    ![noRender](https://i.ibb.co/rb4vC9f/norender.png "noRender")
 
 ## Struktur File React
