@@ -1,0 +1,24 @@
+.header{
+  padding: 1rem;
+  box-shadow: 1px 4px 5px 0px rgba(92,92,92,0.87);
+  -webkit-box-shadow: 1px 4px 5px 0px rgba(92,92,92,0.87);
+  -moz-box-shadow: 1px 4px 5px 0px rgba(92,92,92,0.87);
+  margin-bottom: 10px;
+}
+
+.task{
+  background-color: white;
+  padding: 5px;
+  border-radius: 1rem;
+  margin-top: 7px;
+  margin-left: 15px;
+  display: flex;
+}
+.taskFalse{
+    background-color: white;
+    padding: 5px;
+    border-radius: 1rem;
+    margin-top: 7px;
+    margin-left: 15px;
+    text-decoration-line: line-through; 
+}
