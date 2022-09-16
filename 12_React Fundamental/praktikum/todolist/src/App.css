@@ -21,4 +21,5 @@
     margin-top: 7px;
     margin-left: 15px;
     text-decoration-line: line-through; 
+    display: flex;
 }

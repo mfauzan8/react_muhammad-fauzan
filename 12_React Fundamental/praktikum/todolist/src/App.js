@@ -1,11 +1,12 @@
-import { mockTask } from "./mocData";
 import ToDoListPage from "./pages/ToDoListPage";
+import React from "react";
 
 
-function App() {
-  return (
-    <ToDoListPage lists={mockTask}/> 
-  )
-}
-
+class App extends React.Component {
+    render() {
+      return (
+        <ToDoListPage/> 
+      );
+    }
+  }
 export default App;

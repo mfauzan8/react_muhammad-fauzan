@@ -1,10 +1,21 @@
 import '../../App.css';
+import React from "react";
 
-function Task ({list}) {
-    const completed = list.completed;
-    if(completed === true) {
-        return <button className='taskFalse'>{list.title}</button>
-    }
-    return <button className='task'>{list.title}</button>
-}
+class Task extends React.Component{
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    if(this.props.completed) {
+                return  <button className='taskFalse' onClick={this.props.handleTaskStatus}> 
+                            {this.props.title}
+                        </button>
+            }
+            return      <button className='task' onClick={this.props.handleTaskStatus}>
+                            {this.props.title}
+                            </button>
+        }
+  }
+
 export default Task;
