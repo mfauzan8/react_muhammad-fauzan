@@ -1,8 +1,8 @@
-import ToDoApp from "./Component/ToDoApp";
+import Home from "./Component/Home";
 function App() {
   return (
     <>
-      <ToDoApp />
+      <Home />
     </>
   );
 }

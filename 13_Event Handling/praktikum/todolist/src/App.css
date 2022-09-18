@@ -22,14 +22,11 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.percarian {
-  display: inline;
-}
 
 .inputControl {
   display: flex;
   justify-content: center;
-  width: 85%;
+  width: 80%;
   padding: 15px;
   margin-left: 20px;
   border-radius: 20px;
@@ -55,6 +52,7 @@ p {
   color: grey;
 }
 .btnHapus {
+  font-size: 12px;
   border: none;
   border-radius: 20px;
   padding: 7px;
@@ -73,5 +71,6 @@ p {
   margin-top: 1rem;
 }
 hr {
+  width: 85vh;
   margin-left: 2rem;
 }
