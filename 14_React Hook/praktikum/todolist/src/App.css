@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+.container {
+  box-shadow: -1px 2px 14px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 2px 14px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 2px 14px -3px rgba(0, 0, 0, 0.75);
+  width: 100vh;
+  min-height: 80vh;
+  border-radius: 20px;
+}
+p {
+  font-size: 5rem;
+  font-weight: 900;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  background: #CF0606;
+  background: repeating-radial-gradient(circle farthest-side at left center, #CF0606 0%, #001EE0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+.inputControl {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  padding: 15px;
+  margin-left: 20px;
+  border-radius: 20px;
+  border-style: none;
+  box-shadow: -1px 2px 14px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 2px 14px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 2px 14px -3px rgba(0, 0, 0, 0.75);
+}
+
+.btn-Submit {
+  border: 1px solid rgb(150, 150, 150);
+  background-color: RGB(13, 110, 253);
+  border-radius: 20px;
+  color: white;
+  box-shadow: -1px 2px 14px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 2px 14px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 2px 14px -3px rgba(0, 0, 0, 0.75);
+}
+.complete {
+  text-decoration-line: line-through;
+  font-style: italic;
+  color: grey;
+}
+.btnHapus {
+  font-size: 12px;
+  border: none;
+  border-radius: 20px;
+  padding: 7px;
+  background-image: linear-gradient(to top, #ff0844 0%, #ff9999 100%);
+  color: white;
+  margin-right: 7rem;
+}
+.form-check {
+  margin-left: 2rem;
+  align-self: center;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100vh;
+  margin-top: 1rem;
+}
+hr {
+  width: 85vh;
+  margin-left: 2rem;
+}
