@@ -19,7 +19,7 @@ p {
   display: flex;
   justify-content: center;
   background: #CF0606;
-  background: repeating-radial-gradient(circle farthest-side at left center, #CF0606 0%, #001EE0 100%);
+  background: repeating-radial-gradient(circle farthest-side at left center, #ff6803 0%, #3dffbe 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   
