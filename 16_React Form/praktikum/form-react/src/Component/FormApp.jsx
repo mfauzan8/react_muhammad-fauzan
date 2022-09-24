@@ -15,7 +15,7 @@ export const FormApp = ({ nama, email, nomorHp, fotoSurat, harapan, kelas, handl
         </Form.Group>
         <Form.Group className="mb-2">
           <Form.Label>Nomor Handphone :</Form.Label>
-          <Form.Control name="nomorHp" type="number" min="9" max="14" value={nomorHp} onChange={(ev) => handleInputChange(ev)} required />
+          <Form.Control name="nomorHp" type="number" min="9" value={nomorHp} onChange={(ev) => handleInputChange(ev)} required />
         </Form.Group>
         <Form.Group className="mb-3">
           <Form.Label>Latar Belakang Pendidikan</Form.Label>

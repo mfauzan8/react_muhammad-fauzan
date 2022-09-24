@@ -29,6 +29,7 @@ export const FormContainer = () => {
       } else {
         setErrMsgEmail("Email Tidak Sesuai");
       }
+      return;
     }
     if (name === "nama") {
       if (regex.test(value)) {
@@ -36,6 +37,7 @@ export const FormContainer = () => {
       } else {
         setErrMsgNama("Nama harus berupa huruf");
       }
+      return;
     }
     if (name === "nomorHp") {
       if (form.validity.valid) {
@@ -43,6 +45,7 @@ export const FormContainer = () => {
       } else {
         setErrMsgNoHp("Nomor Hp Tidak Sesuai");
       }
+      return;
     }
 
     setFormData({
@@ -51,7 +54,7 @@ export const FormContainer = () => {
     });
   };
   const handleInputSubmit = (ev) => {
-    if ((errMsgNama, errMsgEmail, errMsgNoHp !== "")) {
+    if (errMsgNama && errMsgEmail && errMsgNoHp !== "") {
       alert("Terdapat data yang tidak sesuai");
     } else {
       alert("Data Pendaftar " + formData.nama + " Berhasil Diterima.");
