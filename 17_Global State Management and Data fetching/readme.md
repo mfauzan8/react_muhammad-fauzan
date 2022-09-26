@@ -51,10 +51,12 @@ Contoh Penggunaan Redux Thunk :
 
 Menggunakan Redux Persist => **<i>npm install redux-persist</i>**
 
-Pembuatan Store :  
+Pembuatan Store :
+
 [![1.png](https://i.postimg.cc/wMS4sC91/1.png)](https://postimg.cc/bS997FDP)
 
 Pemanggilan di App :
+
 [![2.png](https://i.postimg.cc/cHtb41Np/2.png)](https://postimg.cc/MMxD9SH5)
 
 ## Fetching Data
@@ -93,4 +95,4 @@ Pemanggilan di App :
 
 ### Post Data JSON
 
-[![2.png](https://i.postimg.cc/BbgRPqmM/2.png)](https://postimg.cc/XBrsT0SC)
+[![2.png](https://i.postimg.cc/1z8V3B9j/2.png)](https://postimg.cc/PLk56mvW)
