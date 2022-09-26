@@ -21,11 +21,11 @@
 1. **Actions** = Digunakan untuk memberikan informasi dari aplikasi ke store
    [![1.png](https://i.postimg.cc/C5h3mT8d/1.png)](https://postimg.cc/r0HZwHQL)
 2. **Reducer** = Pure Javascript functions yang mengambil state aplikasi saat ini dan object action lalu mengembalikan state aplikasi terbaru. [![2.png](https://i.postimg.cc/wMrwJScC/2.png)](https://postimg.cc/wRh5Y4r2)  
-   **createSlice**
+   **createSlice**  
    [![3.png](https://i.postimg.cc/DZHC49ct/3.png)](https://postimg.cc/YGNNJyZ3)
 3. **Store** = Objek sentral yang menyimpan state pada aplikasi.  
    [![4.png](https://i.postimg.cc/P5TSDzmr/4.png)](https://postimg.cc/gntyFhSf)  
-   **Cara Memasang Redux Store pada React**
+   **Cara Memasang Redux Store pada React**  
    [![5.png](https://i.postimg.cc/ZqgPwryN/5.png)](https://postimg.cc/jWHJ5ncq)
 
 ## Redux Thunk
