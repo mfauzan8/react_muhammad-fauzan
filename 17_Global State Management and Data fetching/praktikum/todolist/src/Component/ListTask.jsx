@@ -1,23 +1,40 @@
 import { useSelector, useDispatch } from "react-redux";
-import { deleteTask } from "../Features/TaskSlice";
-import ListItem from "./ListItem";
+import { deleteTask, handleTaskStatus } from "../Features/TaskSlice";
 
-const ListTask = (props) => {
-  const { handleTaskStatus } = props;
-  const task = useSelector((state) => state.tasklist.tasks);
-  const dispatch = useDispatch;
+const ListTask = () => {
+  const task = useSelector((state) => state.tasklist.task);
+  const dispatch = useDispatch();
   return (
-    <div>
-      {task.map((task, index) => (
-        <ListItem
-          key={index}
-          item={task}
-          deleteTask={() => {
-            dispatch(deleteTask(task.id));
-          }}
-          handleTaskStatus={handleTaskStatus}
-          index={index}
-        />
+    <div className="list">
+      {task.map((item) => (
+        <div className="card m-1" key={item.id}>
+          <div className="card-body">
+            <div className="d-flex flex-row justify-content-between">
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  id="flexCheckDefault"
+                  defaultChecked={item.completed}
+                  onClick={() => {
+                    dispatch(handleTaskStatus(item.id));
+                  }}
+                />
+                <label className="form-check-label " style={item.completed ? { textDecoration: "line-through", color: "grey", fontStyle: "italic" } : { textDecoration: "none" }}>
+                  {item.title}
+                </label>
+              </div>
+              <button
+                className="btnHapus"
+                onClick={() => {
+                  dispatch(deleteTask(item.id));
+                }}
+              >
+                Hapus
+              </button>
+            </div>
+          </div>
+        </div>
       ))}
     </div>
   );

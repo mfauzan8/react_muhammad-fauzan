@@ -1,21 +1,22 @@
+import { v4 as uuidv4 } from "uuid";
 export const mockTask = [
   {
-    id: 1,
+    id: uuidv4(),
     title: "Membuat Komponen",
     completed: true,
   },
   {
-    id: 2,
+    id: uuidv4(),
     title: "Unit Testing",
     completed: false,
   },
   {
-    id: 3,
+    id: uuidv4(),
     title: "Setup Development Environment",
     completed: true,
   },
   {
-    id: 4,
+    id: uuidv4(),
     title: "Deploy ke server",
     completed: false,
   },

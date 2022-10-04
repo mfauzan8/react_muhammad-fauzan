@@ -21,13 +21,12 @@ export const TaskSlice = createSlice({
       };
       state.task = [...state.task, newTask];
     },
-    // handleTaskStatus: (state, action) =>{
-    //     const updateData = [...state.task];
-    //     updateData[index].completed = !updateData[index].completed;
-    //     setData(updateData);
-    // }
+    handleTaskStatus: (state, action) => {
+      const id = action.payload;
+      state.task[id].completed = !action.payload;
+    },
   },
 });
 
-export const { deleteTask, addTask } = TaskSlice.actions;
+export const { deleteTask, addTask, handleTaskStatus } = TaskSlice.actions;
 export default TaskSlice.reducer;
