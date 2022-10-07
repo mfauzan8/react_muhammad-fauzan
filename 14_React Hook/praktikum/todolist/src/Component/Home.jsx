@@ -4,16 +4,17 @@ import { mockTask } from "../mocData";
 import AddTask from "./AddTask";
 import ListTask from "./ListTask";
 
-
 const valueData = mockTask;
 
-function Home () {
-  const [data,setData] = useState(valueData)
+function Home() {
+  const [data, setData] = useState(valueData);
 
   const deleteTask = (id) => {
-    setData((oldData) => oldData.filter(item => {
-      return item.id !== id;
-    }))
+    setData((oldData) =>
+      oldData.filter((item) => {
+        return item.id !== id;
+      })
+    );
   };
 
   const addTask = (newData) => {
@@ -27,13 +28,13 @@ function Home () {
     setData(updateData);
   };
 
-    return (
-      <div className="container">
-        <p>To Do App</p>
-        <AddTask addTask={addTask} />
-        <ListTask data={data} deleteTask={deleteTask} handleTaskStatus={handleTaskStatus} />
-      </div>
-    );
+  return (
+    <div className="container">
+      <p>To Do App</p>
+      <AddTask addTask={addTask} />
+      <ListTask data={data} deleteTask={deleteTask} handleTaskStatus={handleTaskStatus} />
+    </div>
+  );
 }
 
 export default Home;

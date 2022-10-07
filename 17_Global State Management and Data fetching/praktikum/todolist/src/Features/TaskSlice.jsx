@@ -22,8 +22,8 @@ export const TaskSlice = createSlice({
       state.task = [...state.task, newTask];
     },
     handleTaskStatus: (state, action) => {
-      const id = action.payload;
-      state.task[id].completed = !action.payload;
+      let newData = [...state.task].find(({ id }) => id === action.payload);
+      newData.completed = !newData.completed;
     },
   },
 });
