@@ -3,14 +3,14 @@ import { persistReducer, persistStore } from "redux-persist";
 import TaskSlice from "../Features/TaskSlice";
 import storage from "redux-persist/lib/storage";
 
-const reducers = combineReducers({
-  tasklist: TaskSlice,
-});
-
 const persistConfig = {
   key: ShadowRoot,
   storage,
 };
+
+const reducers = combineReducers({
+  tasklist: TaskSlice,
+});
 
 const persistedReducer = persistReducer(persistConfig, reducers);
 

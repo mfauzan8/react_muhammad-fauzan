@@ -8,7 +8,6 @@ function AddTask(props) {
 
   const [data, setData] = useState({
     title: "",
-    completed: "false",
   });
 
   const onChange = (e) => {
@@ -28,8 +27,9 @@ function AddTask(props) {
 
       dispatch(addTask(newData));
       setData({
+        id: +"",
         title: "",
-        completed: "false",
+        completed: false,
       });
     } else {
       alert("Task Harus Di Isi");
