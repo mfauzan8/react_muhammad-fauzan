@@ -21,24 +21,24 @@ contoh : MySQL
 ## Jenis Perintah SQL
 
 1. **DDL** (Data Definition Language) = Membuat dan memodifikasi struktur database.  
-   Statement DDL :  
-    _ CREATE DATABASE database_name
-   _ USE database_name
-   _ CREATE TABLE ...
-   _ DROP TABLE ...
-   _ RENAME TABLE ...
-   _ ALTER TABLE ...
+   Statement DDL :
+   - CREATE DATABASE database_name
+   - USE database_name
+   - CREATE TABLE ...
+   - DROP TABLE ...
+   - RENAME TABLE ...
+   - ALTER TABLE ...
 2. **DML** (Data Manipulation Language) = Memanipulasi data dalam tabel dari suatu database.  
-   Statement DML :  
-    _ INSERT  
-    <a href="https://imgbb.com/"><img src="https://i.ibb.co/61c2T59/1.png"></a>  
-    _ SELECT  
-    <a href="https://imgbb.com/"><img src="https://i.ibb.co/ggGsnrT/1.png"></a>  
-    <a href="https://imgbb.com/"><img src="https://i.ibb.co/QFdc7jh/1.png" ></a>
-   _ UPDATE  
-    <a href="https://ibb.co/wcQ3HqC"><img src="https://i.ibb.co/TW0pXGR/1.png"></a>
-   _ DELETE  
-    <a href="https://imgbb.com/"><img src="https://i.ibb.co/Mpv67bJ/1.png" ></a>
+   Statement DML :
+   - INSERT  
+     <a href="https://imgbb.com/"><img src="https://i.ibb.co/61c2T59/1.png"></a>
+   - SELECT  
+     <a href="https://imgbb.com/"><img src="https://i.ibb.co/ggGsnrT/1.png"></a>  
+     <a href="https://imgbb.com/"><img src="https://i.ibb.co/QFdc7jh/1.png" ></a>
+   - UPDATE  
+     <a href="https://ibb.co/wcQ3HqC"><img src="https://i.ibb.co/TW0pXGR/1.png"></a>
+   - DELETE  
+     <a href="https://imgbb.com/"><img src="https://i.ibb.co/Mpv67bJ/1.png" ></a>
 
 | Statement |                                                                                      Contoh penggunaan                                                                                       |
 | --------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
