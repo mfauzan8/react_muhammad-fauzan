@@ -5,20 +5,9 @@ import Header from "./Header";
 import { gql, useLazyQuery, useQuery } from "@apollo/client";
 import React from "react";
 
-// const GetData = gql`
-//   query MyQuery($id_user: Int!) {
-//     pengunjung_data(where: { id_user: { _eq: $id_user } }) {
-//       id
-//       jenis_kelamin
-//       nama
-//       umur
-//     }
-//   }
-// `;
-
 const GetData = gql`
-  query MyQuery {
-    pengunjung_data {
+  query MyQuery($id_user: Int!) {
+    pengunjung_data(where: { id_user: { _eq: $id_user } }) {
       id
       jenis_kelamin
       nama
@@ -28,23 +17,8 @@ const GetData = gql`
 `;
 
 const Home = () => {
-  // const [getData, { data, loading, error }] = useLazyQuery(GetData);
-  const { data, loading, error } = useQuery(GetData);
+  const [getData, { data, loading, error }] = useLazyQuery(GetData);
   const [idUser, setIdUser] = useState(0);
-
-  const onChangeIdUser = (e) => {
-    if (e.target) {
-      setIdUser(e.target.value);
-    }
-  };
-
-  // const onGetData = () => {
-  //   getData({
-  //     variables: {
-  //       id_user: idUser,
-  //     },
-  //   });
-  // };
 
   //   const hapusPengunjung = (id) => {
   //     setData({
@@ -65,6 +39,22 @@ const Home = () => {
   //       data: [...data, newData],
   //     });
   //   };
+
+  const onChangeIdUser = (e) => {
+    if (e.target) {
+      setIdUser(e.target.value);
+    }
+    console.log(e.target.value);
+  };
+
+  const onGetData = (e) => {
+    e.preventDefault();
+    getData({
+      variables: {
+        id_user: idUser,
+      },
+    });
+  };
   return (
     <div>
       <Header />
@@ -75,7 +65,7 @@ const Home = () => {
             User ID:
             <input value={idUser} onChange={onChangeIdUser} />
           </label>
-          <button>Get Data</button>
+          <button onClick={onGetData}>Get Data</button>
         </form>
       </div>
       <ListPassenger
