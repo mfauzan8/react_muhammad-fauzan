@@ -1,0 +1,16 @@
+tr,
+td {
+  border: 1px solid black;
+}
+thead {
+  background-color: red;
+  color: white;
+}
+
+.inputan {
+  margin-top: 25px;
+}
+
+input {
+  margin: 8px;
+}
