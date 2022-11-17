@@ -1,0 +1,9 @@
+#home {
+  background-image: url("bg.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+#contact {
+  background-image: linear-gradient(to bottom, #001725, #022232, #032e40, #033a4d, #02475b, #014c5f, #005163, #005667, #005363, #00515e, #004e5a, #014b56);
+}
