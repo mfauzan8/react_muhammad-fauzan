@@ -1,8 +1,8 @@
 import './App.css';
-import AboutUs from './component/AboutUs';
 import Footer from './component/Footer';
 import Home from './component/Home';
 import Navigation from './component/Navigation';
+import AboutUsContainer from './containers/AboutUsContainer';
 import ContactContainers from './containers/ContactContainers';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <Home />
       </div>
       <ContactContainers />
-      <AboutUs />
+      <AboutUsContainer />
       <Footer />
     </>
 

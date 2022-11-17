@@ -17,10 +17,10 @@ const Navigation = () => {
                         />
                     </Navbar.Brand>
                     <Nav className="ms-auto text-white fw-bold">
-                        <Nav.Link className="me-3" href="#home">Home</Nav.Link>
+                        <Nav.Link className="me-3" href="">Home</Nav.Link>
                         <Nav.Link className="me-3" href="#contact">Contact</Nav.Link>
-                        <Nav.Link className="me-3" href="#features">About Us</Nav.Link>
-                        <Nav.Link className="me-3" href="#pricing">Pricing</Nav.Link>
+                        <Nav.Link className="me-3" href="#aboutus">About Us (Hasura)</Nav.Link>
+                        <Nav.Link className="me-3" href="#pricing">Public Api</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>
