@@ -11,3 +11,12 @@ export const getUsers = async () => {
   const response = await client.get("/");
   return response.data.about_us_users;
 };
+
+export const clientPublic = axios.create({
+  baseURL: "https://fakerapi.it/api/v1/images?_quantity=9&_type=kittens&_height=300"
+});
+
+export const getFruits = async () => {
+  const responses = await clientPublic.get("/");
+  return responses.data.data
+}

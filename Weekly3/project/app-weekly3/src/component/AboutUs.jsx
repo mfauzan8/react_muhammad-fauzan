@@ -21,7 +21,7 @@ const AboutUs = ({ users, loading }) => {
                         <div className="d-flex flex-row">
                             {loading ? <Spinner animation="grow" /> :
                                 users.map((user) =>
-                                    <div className='container'>
+                                    <div className='container' key={user.id}>
                                         <img src={user.avatar} className="rounded-circle mb-2" alt="profile" style={{ width: "100px" }} />
                                         <h6>{user.name}</h6>
                                         <p style={{ fontSize: "12px", color: "#FF6B7A" }}>{user.address}</p>

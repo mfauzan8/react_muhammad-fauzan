@@ -1,22 +1,15 @@
 import './App.css';
-import Footer from './component/Footer';
-import Home from './component/Home';
-import Navigation from './component/Navigation';
-import AboutUsContainer from './containers/AboutUsContainer';
-import ContactContainers from './containers/ContactContainers';
+import { Route, Routes } from 'react-router-dom';
+import LandingPage from './component/LandingPage';
+import PublicApiContainer from './containers/PublicApiContainer';
+
 
 function App() {
   return (
-    <>
-      <div className="bg-home">
-        <Navigation />
-        <Home />
-      </div>
-      <ContactContainers />
-      <AboutUsContainer />
-      <Footer />
-    </>
-
+    <Routes>
+      <Route path="/" exact element={<LandingPage />} />
+      <Route path="/public-api" exact element={<PublicApiContainer />} />
+    </Routes>
   );
 }
 
