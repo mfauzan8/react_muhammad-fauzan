@@ -26,7 +26,6 @@ const AboutUs = ({ users, loading }) => {
                                         <h6>{user.name}</h6>
                                         <p style={{ fontSize: "12px", color: "#FF6B7A" }}>{user.address}</p>
                                     </div>
-
                                 )}
                         </div>
                     </Row>
