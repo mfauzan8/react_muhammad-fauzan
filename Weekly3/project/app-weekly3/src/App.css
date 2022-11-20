@@ -32,3 +32,8 @@ footer hr {
   background-color: #001725 !important;
   border: none !important;
 }
+
+.publicApi {
+  background-color: #002634;
+  height: 100vh;
+}

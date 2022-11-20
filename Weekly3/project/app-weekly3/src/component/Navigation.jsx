@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import logo from '../img/Logo.png'
+import { Link } from 'react-router-dom'
 
 const Navigation = () => {
     return (
@@ -20,7 +21,9 @@ const Navigation = () => {
                         <Nav.Link className="me-3" href="">Home</Nav.Link>
                         <Nav.Link className="me-3" href="#contact">Contact</Nav.Link>
                         <Nav.Link className="me-3" href="#aboutus">About Us (Hasura)</Nav.Link>
-                        <Nav.Link className="me-3" href="#pricing">Public Api</Nav.Link>
+                        <Link className="me-3 pt-2" style={{ textDecoration: "none", color: "white" }} to="/public-api">
+                            Public Api
+                        </Link>
                     </Nav>
                 </Container>
             </Navbar>
